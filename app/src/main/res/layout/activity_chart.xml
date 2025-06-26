@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chartLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5"
+    tools:context=".ChartActivity">
+
+    <TextView
+        android:id="@+id/chartTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spending Overview"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:layout_marginBottom="20dp" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        tools:ignore="MissingClass" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/chartNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This chart shows your spending distribution by category."
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnBackToDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Dashboard"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

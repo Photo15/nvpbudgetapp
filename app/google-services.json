@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1008550322737",
+    "project_id": "nvpapp-f2592",
+    "storage_bucket": "nvpapp-f2592.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008550322737:android:c80f6eac073fb4beb66b10",
+        "android_client_info": {
+          "package_name": "com.example.nvpbudgetapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxl95n1XHXYED8zwL-iktiFqEBhdY1WDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

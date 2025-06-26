@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goalLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+
+    <TextView
+        android:id="@+id/tvGoalHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set a Financial Goal"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etGoalTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Goal Title"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <EditText
+        android:id="@+id/etGoalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Target Amount (e.g., 500)"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <Button
+        android:id="@+id/btnPickDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick Deadline"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#009688"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnSaveGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Goal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvSavedGoals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Goals:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="#333333" />
+
+    <ListView
+        android:id="@+id/listGoals"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnBackToDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Dashboard"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
